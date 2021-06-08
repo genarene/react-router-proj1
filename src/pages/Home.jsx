@@ -16,7 +16,7 @@ const Home = () => {
 	return (
 		<div className='App'>
 			{posts.map(({ id, title, body, userId }) => (
-				<Card key={id} title={title} body={body} userId={userId} />
+				<Card key={id} title={title} body={body} userId={userId} postId={id} />
 			))}
 		</div>
 	);

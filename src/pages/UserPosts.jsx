@@ -18,7 +18,7 @@ const UserPosts = () => {
 	return (
 		<div>
 			{userposts.map(({ title, id, userId, body }) => (
-				<Card key={id} title={title} body={body} userId={userId} />
+				<Card key={id} title={title} body={body} userId={userId} postId={id} />
 			))}
 		</div>
 	);

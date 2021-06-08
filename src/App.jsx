@@ -7,14 +7,14 @@ import UserPosts from './pages/UserPosts';
 const App = () => {
 	return (
 		<Router>
-			<h1>This will always show up</h1>
+			<h1 style={{margin:'auto', textAlign:'center', paddingBottom:'2rem', textShadow: '2px 3px #887070'}}>Blog posts</h1>
 			<Switch>
 				{/* render Home Component when we hit /home */}
 				<Route exact path='/home'>
 					<Home />
 				</Route>
 				{/* render Post Component when we hit /post */}
-				<Route exact path='/post'>
+				<Route exact path='/post/:postid'>
 					<Posts />
 				</Route>
 				{/* render UserPost Component when we hit /userpost */}
